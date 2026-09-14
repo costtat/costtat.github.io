@@ -1,325 +1,486 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MONOCHROME — New Collection</title>
+    <title>Thiago — Front-End Developer</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header class="header">
+    <!-- CURSOR -->
+    <div class="cursor"></div>
 
-    <a href="index.html" class="logo">
-        MONOCHROME
-    </a>
+    <!-- NAVBAR -->
+    <header class="navbar">
 
-    <nav>
-        <a href="loja.html">SHOP</a>
-        <a href="colecao.html">COLLECTION</a>
-        <a href="sobre.html">ABOUT</a>
-        <a href="contato.html">CONTACT</a>
-    </nav>
-
-    <div class="header-icons">
-        <a href="#">⌕</a>
-        <a href="#">♡</a>
-        <a href="loja.html">BAG (0)</a>
-    </div>
-
-</header>
-
-
-<main>
-
-<!-- HERO -->
-
-<section class="hero-fashion">
-
-    <div class="hero-image">
-
-        <img
-            src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1800&q=90"
-            alt="Nova coleção">
-
-    </div>
-
-    <div class="hero-copy">
-
-        <p>FW / 26</p>
-
-        <h1>
-            NOT<br>
-            JUST<br>
-            <i>CLOTHES.</i>
-        </h1>
-
-        <a href="colecao.html">
-            DISCOVER COLLECTION →
+        <a href="#" class="logo">
+            <span>&lt;</span>THIAGO<span>/&gt;</span>
         </a>
 
-    </div>
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
 
-</section>
-
-
-<!-- MARQUEE -->
-
-<div class="marquee">
-
-    <div>
-        MONOCHROME® — EST. 2026 — NEW ERA — MONOCHROME® — EST. 2026 — NEW ERA —
-    </div>
-
-</div>
-
-
-<!-- DESTAQUE -->
-
-<section class="editorial">
-
-    <div class="editorial-text">
-
-        <p class="eyebrow">01 / THE NEW DROP</p>
-
-        <h2>
-            Made for<br>
-            <i>your era.</i>
-        </h2>
-
-        <p>
-            Uma coleção criada para quem não precisa
-            seguir tendências para criar seu próprio estilo.
-        </p>
-
-        <a class="underline-link" href="loja.html">
-            SHOP THE DROP →
+        <a href="#contato" class="nav-button">
+            Vamos conversar ↗
         </a>
 
-    </div>
+    </header>
 
 
-    <div class="editorial-image">
+    <!-- HERO -->
+    <main>
 
-        <img
-            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=90"
-            alt="Coleção Monochrome">
+        <section class="hero" id="home">
 
-    </div>
+            <div class="hero-background"></div>
 
-</section>
+            <div class="hero-content">
+
+                <div class="availability">
+                    <span></span>
+                    DISPONÍVEL PARA PROJETOS
+                </div>
+
+                <h1>
+                    Eu transformo<br>
+                    <span>ideias</span> em interfaces.
+                </h1>
+
+                <p>
+                    Desenvolvedor Front-End focado em criar experiências
+                    digitais modernas, rápidas e visualmente marcantes.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projetos" class="primary-button">
+                        Ver projetos
+                        <span>↓</span>
+                    </a>
+
+                    <a href="#contato" class="secondary-button">
+                        Entrar em contato
+                    </a>
+
+                </div>
+
+            </div>
 
 
-<!-- PRODUTOS -->
+            <div class="hero-code">
 
-<section class="products-section">
+                <div class="code-header">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
-    <div class="section-top">
+<pre><code><span class="purple">const</span> developer = {
+    name: <span class="green">"Thiago"</span>,
+    role: <span class="green">"Front-End"</span>,
+    skills: [
+        <span class="green">"HTML"</span>,
+        <span class="green">"CSS"</span>,
+        <span class="green">"JavaScript"</span>,
+        <span class="green">"Vue.js"</span>
+    ],
+    creativity: <span class="orange">100</span>%
+};</code></pre>
+
+            </div>
+
+            <div class="scroll">
+                SCROLL ↓
+            </div>
+
+        </section>
+
+
+        <!-- MARQUEE -->
+        <section class="marquee">
+
+            <div>
+                FRONT-END • UI DESIGN • DEVELOPMENT • CREATIVE CODE •
+                FRONT-END • UI DESIGN • DEVELOPMENT • CREATIVE CODE •
+            </div>
+
+        </section>
+
+
+        <!-- PROJETOS -->
+        <section class="projects section" id="projetos">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="eyebrow">01 — PORTFÓLIO</span>
+
+                    <h2>
+                        Projetos que<br>
+                        <em>falam por si.</em>
+                    </h2>
+                </div>
+
+                <p>
+                    Uma seleção de interfaces e experiências digitais
+                    desenvolvidas para diferentes tipos de projetos.
+                </p>
+
+            </div>
+
+
+            <!-- FILTROS -->
+            <div class="filters">
+
+                <button class="filter active" data-filter="all">
+                    Todos
+                </button>
+
+                <button class="filter" data-filter="web">
+                    Websites
+                </button>
+
+                <button class="filter" data-filter="ecommerce">
+                    E-commerce
+                </button>
+
+                <button class="filter" data-filter="dashboard">
+                    Dashboards
+                </button>
+
+            </div>
+
+
+            <!-- GRID -->
+            <div class="project-grid">
+
+
+                <!-- PROJETO 1 -->
+                <article class="project-card large" data-category="ecommerce">
+
+                    <div class="project-image fashion">
+
+                        <div class="mockup">
+
+                            <div class="mockup-top">
+                                MONOCHROME
+                                <span>MENU　 CART</span>
+                            </div>
+
+                            <div class="fashion-title">
+                                LESS<br>
+                                <i>IS</i><br>
+                                MORE.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <div>
+                            <span>E-COMMERCE</span>
+
+                            <h3>Monochrome</h3>
+                        </div>
+
+                        <a href="#" class="project-arrow">↗</a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJETO 2 -->
+                <article class="project-card" data-category="web">
+
+                    <div class="project-image vertex">
+
+                        <div class="vertex-content">
+                            <small>VERTEX</small>
+                            <strong>
+                                LAB<br>
+                                EQUIPMENT
+                            </strong>
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <div>
+                            <span>WEBSITE</span>
+                            <h3>Vertex Lab</h3>
+                        </div>
+
+                        <a href="#" class="project-arrow">↗</a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJETO 3 -->
+                <article class="project-card" data-category="dashboard">
+
+                    <div class="project-image dashboard">
+
+                        <div class="dashboard-ui">
+
+                            <div class="dash-number">
+                                R$ 84.920
+                            </div>
+
+                            <div class="dash-chart"></div>
+
+                            <div class="dash-bars">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <div>
+                            <span>DASHBOARD</span>
+                            <h3>Analytics</h3>
+                        </div>
+
+                        <a href="#" class="project-arrow">↗</a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJETO 4 -->
+                <article class="project-card large" data-category="web">
+
+                    <div class="project-image architecture">
+
+                        <div>
+                            <span>ARCH / 2026</span>
+
+                            <h3>
+                                SPACE<br>
+                                BETWEEN
+                            </h3>
+
+                            <small>
+                                Architecture & Interior
+                            </small>
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <div>
+                            <span>CREATIVE WEBSITE</span>
+                            <h3>Atelier 01</h3>
+                        </div>
+
+                        <a href="#" class="project-arrow">↗</a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+        <section class="about section" id="sobre">
+
+            <div class="about-number">
+                02
+            </div>
+
+            <div class="about-content">
+
+                <span class="eyebrow">
+                    SOBRE MIM
+                </span>
+
+                <h2>
+                    Código com<br>
+                    <em>personalidade.</em>
+                </h2>
+
+                <p>
+                    Gosto de criar interfaces que não sejam apenas bonitas,
+                    mas que tenham propósito. Cada projeto começa com uma
+                    ideia e termina em uma experiência digital intuitiva.
+                </p>
+
+                <p>
+                    Meu foco está em Front-End, UI, responsividade,
+                    animações e desenvolvimento de experiências modernas
+                    para web.
+                </p>
+
+                <div class="skills">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Vue.js</span>
+                    <span>Responsive Design</span>
+                    <span>UI / UX</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROCESSO -->
+        <section class="process section">
+
+            <span class="eyebrow">
+                03 — PROCESSO
+            </span>
+
+            <h2>
+                Do conceito ao<br>
+                <em>pixel perfeito.</em>
+            </h2>
+
+            <div class="process-grid">
+
+                <div class="process-item">
+
+                    <span>01</span>
+
+                    <h3>Descobrir</h3>
+
+                    <p>
+                        Entender o projeto, objetivo, público e
+                        necessidades da interface.
+                    </p>
+
+                </div>
+
+                <div class="process-item">
+
+                    <span>02</span>
+
+                    <h3>Projetar</h3>
+
+                    <p>
+                        Transformar ideias em uma experiência visual
+                        clara, moderna e funcional.
+                    </p>
+
+                </div>
+
+                <div class="process-item">
+
+                    <span>03</span>
+
+                    <h3>Desenvolver</h3>
+
+                    <p>
+                        Construir uma interface responsiva,
+                        performática e fiel ao conceito.
+                    </p>
+
+                </div>
+
+                <div class="process-item">
+
+                    <span>04</span>
+
+                    <h3>Entregar</h3>
+
+                    <p>
+                        Testar, otimizar e entregar uma experiência
+                        pronta para diferentes dispositivos.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTATO -->
+        <section class="contact section" id="contato">
+
+            <div class="contact-inner">
+
+                <span class="eyebrow">
+                    04 — CONTATO
+                </span>
+
+                <h2>
+                    Tem uma ideia?<br>
+                    <em>Vamos criar.</em>
+                </h2>
+
+                <a href="mailto:seuemail@email.com" class="email">
+                    seuemail@email.com
+                    <span>↗</span>
+                </a>
+
+                <div class="socials">
+
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Instagram</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
 
         <div>
-            <p class="eyebrow">02 / SHOP</p>
-            <h2>New arrivals</h2>
-        </div>
-
-        <a href="loja.html" class="underline-link">
-            VIEW ALL →
-        </a>
-
-    </div>
-
-
-    <div class="product-grid">
-
-
-        <a href="produto.html" class="product">
-
-            <div class="product-image">
-
-                <span class="tag">NEW</span>
-
-                <img
-                    src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=90"
-                    alt="Oversized jacket">
-
-                <div class="quick-view">
-                    QUICK VIEW
-                </div>
-
-            </div>
-
-            <div class="product-info">
-
-                <div>
-                    <h3>Oversized Jacket</h3>
-                    <p>Black / 01</p>
-                </div>
-
-                <strong>R$ 389,90</strong>
-
-            </div>
-
-        </a>
-
-
-        <a href="produto.html" class="product">
-
-            <div class="product-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=900&q=90"
-                    alt="Minimal shirt">
-
-                <div class="quick-view">
-                    QUICK VIEW
-                </div>
-
-            </div>
-
-            <div class="product-info">
-
-                <div>
-                    <h3>Essential Shirt</h3>
-                    <p>Off White / 02</p>
-                </div>
-
-                <strong>R$ 189,90</strong>
-
-            </div>
-
-        </a>
-
-
-        <a href="produto.html" class="product">
-
-            <div class="product-image">
-
-                <span class="tag">NEW</span>
-
-                <img
-                    src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=90"
-                    alt="Wide pants">
-
-                <div class="quick-view">
-                    QUICK VIEW
-                </div>
-
-            </div>
-
-            <div class="product-info">
-
-                <div>
-                    <h3>Wide Pants</h3>
-                    <p>Grey / 03</p>
-                </div>
-
-                <strong>R$ 279,90</strong>
-
-            </div>
-
-        </a>
-
-
-        <a href="produto.html" class="product">
-
-            <div class="product-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=900&q=90"
-                    alt="Basic tee">
-
-                <div class="quick-view">
-                    QUICK VIEW
-                </div>
-
-            </div>
-
-            <div class="product-info">
-
-                <div>
-                    <h3>Boxy Tee</h3>
-                    <p>Black / 04</p>
-                </div>
-
-                <strong>R$ 149,90</strong>
-
-            </div>
-
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- MANIFESTO -->
-
-<section class="manifesto">
-
-    <p class="eyebrow">MONOCHROME MANIFESTO</p>
-
-    <h2>
-        WEAR LESS.<br>
-        <i>MEAN MORE.</i>
-    </h2>
-
-    <p>
-        Menos excesso. Mais identidade.
-        Criamos peças para durar além da temporada.
-    </p>
-
-</section>
-
-
-<!-- NEWSLETTER -->
-
-<section class="newsletter">
-
-    <p class="eyebrow">STAY IN THE LOOP</p>
-
-    <h2>
-        Don't miss<br>
-        the <i>next drop.</i>
-    </h2>
-
-    <form>
-
-        <input
-            type="email"
-            placeholder="your@email.com">
-
-        <button>
-            JOIN →
-        </button>
-
-    </form>
-
-</section>
-
-</main>
-
-
-<footer>
-
-    <div class="footer-logo">
-        MONOCHROME
-    </div>
-
-    <div class="footer-links">
-
-        <div>
-            <p>SHOP</p>
-            <a href="loja.html">All products</a>
-            <a href="colecao.html">New collection</a>
+            © 2026 THIAGO
         </div>
 
         <div>
-            <p>INFO</p>
-            <a href="sobre.html">About</a>
-            <a href="contato.html">Contact</a>
+            DESIGNED & CODED WITH ☕
         </div>
-```
+
+        <a href="#home">
+            BACK TO TOP ↑
+        </a>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
