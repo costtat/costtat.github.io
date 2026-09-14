@@ -1,0 +1,123 @@
+html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About — MONOCHROME</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        MONOCHROME
+    </a>
+
+    <nav>
+        <a href="loja.html">SHOP</a>
+        <a href="colecao.html">COLLECTION</a>
+        <a href="sobre.html" class="active">ABOUT</a>
+        <a href="contato.html">CONTACT</a>
+    </nav>
+
+    <div class="header-icons">
+        <a href="#">⌕</a>
+        <a href="#">♡</a>
+        <a href="#">BAG (0)</a>
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="about-fashion">
+
+    <div>
+
+        <p class="eyebrow">MONOCHROME / ABOUT</p>
+
+        <h1>
+            WE DON'T<br>
+            FOLLOW<br>
+            <i>THE RULES.</i>
+        </h1>
+
+    </div>
+
+</section>
+
+
+<section class="about-text">
+
+    <p class="eyebrow">OUR STORY</p>
+
+    <h2>
+        Clothing is a form<br>
+        of <i>expression.</i>
+    </h2>
+
+    <p>
+        A MONOCHROME nasceu para criar roupas que
+        não dependem de tendências passageiras.
+    </p>
+
+    <p>
+        Nossa estética mistura minimalismo, streetwear
+        e referências da cultura contemporânea para
+        criar peças que podem ser interpretadas de
+        diferentes maneiras.
+    </p>
+
+    <p>
+        Não queremos dizer como você deve se vestir.
+        Queremos criar peças que façam sentido
+        quando você as veste.
+    </p>
+
+</section>
+
+
+<section class="about-image">
+
+    <img
+        src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1800&q=90"
+        alt="Monochrome">
+
+</section>
+
+
+<section class="manifesto">
+
+    <h2>
+        YOUR STYLE.<br>
+        YOUR RULES.
+    </h2>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        MONOCHROME
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 MONOCHROME
+    </div>
+
+</footer>
+
+</body>
+</html>
