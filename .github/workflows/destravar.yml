@@ -1,0 +1,12 @@
+name: Forçar Cancelamento
+on: workflow_dispatch # Permite que você clique em um botão para rodar
+
+jobs:
+  cancelar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancelar Workflow Travado
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Usa a chave mestra automática do GitHub
+        run: |
+          gh api -X POST /repos/costtat/costtat.github.io/actions/runs/34838453419/force-cancel
