@@ -1,16 +1,13 @@
-/* =========================
-   PROJECT FILTER
-========================= */
+const filters = document.querySelectorAll(".filters button");
+const projects = document.querySelectorAll(".project");
 
-const filters = document.querySelectorAll(".filter");
-const projects = document.querySelectorAll(".project-card");
 
 filters.forEach(filter => {
 
     filter.addEventListener("click", () => {
 
-        filters.forEach(item => {
-            item.classList.remove("active");
+        filters.forEach(button => {
+            button.classList.remove("active");
         });
 
         filter.classList.add("active");
@@ -38,7 +35,7 @@ filters.forEach(filter => {
 
                 setTimeout(() => {
                     project.style.display = "none";
-                }, 250);
+                }, 300);
 
             }
 
@@ -49,57 +46,41 @@ filters.forEach(filter => {
 });
 
 
-/* =========================
-   CURSOR
-========================= */
 
-const cursor = document.querySelector(".cursor");
+/* ==========================
+   REVEAL ON SCROLL
+========================== */
 
-document.addEventListener("mousemove", e => {
-
-    cursor.style.left = `${e.clientX}px`;
-    cursor.style.top = `${e.clientY}px`;
-
-});
-
-
-/* =========================
-   SCROLL REVEAL
-========================= */
-
-const revealElements = document.querySelectorAll(
-    ".project-card, .process-item, .about-content"
+const elements = document.querySelectorAll(
+    ".project, .process-card, .about-content, .contact-box"
 );
 
 const observer = new IntersectionObserver(
+
     entries => {
 
         entries.forEach(entry => {
 
             if (entry.isIntersecting) {
 
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0)";
+                entry.target.classList.add("visible");
 
             }
 
         });
 
     },
+
     {
-        threshold: 0.1
+        threshold: .15
     }
+
 );
 
 
-revealElements.forEach(element => {
+elements.forEach(element => {
 
-    element.style.opacity = "0";
-
-    element.style.transform = "translateY(40px)";
-
-    element.style.transition =
-        "opacity .8s ease, transform .8s ease";
+    element.classList.add("reveal");
 
     observer.observe(element);
 

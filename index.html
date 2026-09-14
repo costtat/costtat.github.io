@@ -10,18 +10,22 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- CURSOR -->
-    <div class="cursor"></div>
+    <!-- BACKGROUND -->
+    <div class="background">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
 
     <!-- NAVBAR -->
-    <header class="navbar">
+    <header class="navbar glass">
 
-        <a href="#" class="logo">
+        <a href="#home" class="logo">
             <span>&lt;</span>THIAGO<span>/&gt;</span>
         </a>
 
@@ -41,271 +45,483 @@
 
     <!-- HERO -->
     <main>
+
         <section class="hero" id="home">
-            <div class="hero-background"></div>
+
             <div class="hero-content">
-                <div class="availability">
+
+                <div class="status glass">
                     <span></span>
                     DISPONÍVEL PARA PROJETOS
                 </div>
+
                 <h1>
-                    Eu transformo<br>
-                    <span>ideias</span> em interfaces.
+                    Criando experiências<br>
+                    <span>digitais.</span>
                 </h1>
+
                 <p>
-                    Desenvolvedor Front-End focado em criar experiências
-                    digitais modernas, rápidas e visualmente marcantes.
+                    Desenvolvedor Front-End especializado em transformar
+                    ideias em interfaces modernas, responsivas e
+                    memoráveis.
                 </p>
+
                 <div class="hero-buttons">
-                    <a href="#projetos" class="primary-button">
-                        Ver projetos
+
+                    <a href="#projetos" class="button primary">
+                        Explorar projetos
                         <span>↓</span>
                     </a>
-                    <a href="#contato" class="secondary-button">
-                        Entrar em contato
+
+                    <a href="#contato" class="button glass">
+                        Entrar em contato ↗
                     </a>
+
                 </div>
+
             </div>
-            <div class="hero-code">
-                <div class="code-header">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+
+
+            <!-- CARD FLUTUANTE -->
+
+            <div class="floating-card glass">
+
+                <div class="window-top">
+                    <div class="dots">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+
+                    <span>developer.js</span>
                 </div>
-<pre><code><span class="purple">const</span> developer = {
-    name: <span class="green">"Thiago"</span>,
-    role: <span class="green">"Front-End"</span>,
-    skills: [
-        <span class="green">"HTML"</span>,
-        <span class="green">"CSS"</span>,
-        <span class="green">"JavaScript"</span>,
-        <span class="green">"Vue.js"</span>
-    ],
-    creativity: <span class="orange">100</span>%
-};</code></pre>
+
+                <div class="code">
+
+                    <span class="purple">const</span>
+                    <span class="white">developer</span>
+                    = {
+
+                    <br><br>
+
+                    &nbsp;&nbsp;name:
+                    <span class="green">"Thiago"</span>,
+
+                    <br>
+
+                    &nbsp;&nbsp;role:
+                    <span class="green">"Front-End"</span>,
+
+                    <br>
+
+                    &nbsp;&nbsp;passion:
+                    <span class="green">"Creative Web"</span>,
+
+                    <br>
+
+                    &nbsp;&nbsp;coffee:
+                    <span class="orange">true</span>
+
+                    <br><br>
+
+                    };
+
+                </div>
+
             </div>
+
+
             <div class="scroll">
-                SCROLL ↓
+                SCROLL TO EXPLORE
+                <span>↓</span>
             </div>
+
         </section>
+
+
         <!-- MARQUEE -->
-        <section class="marquee">
+
+        <section class="marquee glass">
+
             <div>
-                FRONT-END • UI DESIGN • DEVELOPMENT • CREATIVE CODE •
-                FRONT-END • UI DESIGN • DEVELOPMENT • CREATIVE CODE •
+                FRONT-END　•　UI DESIGN　•　WEB DEVELOPMENT　•　CREATIVE CODE　•
+                FRONT-END　•　UI DESIGN　•　WEB DEVELOPMENT　•　CREATIVE CODE　•
             </div>
+
         </section>
+
+
         <!-- PROJETOS -->
+
         <section class="projects section" id="projetos">
-            <div class="section-heading">
-                <div>
-                    <span class="eyebrow">01 — PORTFÓLIO</span>
-                    <h2>
-                        Projetos que<br>
-                        <em>falam por si.</em>
-                    </h2>
-                </div>
+
+            <div class="section-title">
+
+                <span>01 — PROJETOS</span>
+
+                <h2>
+                    Selected<br>
+                    <strong>works.</strong>
+                </h2>
+
                 <p>
-                    Uma seleção de interfaces e experiências digitais
-                    desenvolvidas para diferentes tipos de projetos.
+                    Alguns dos conceitos e experiências digitais
+                    desenvolvidos para diferentes projetos.
                 </p>
+
             </div>
+
+
             <!-- FILTROS -->
+
             <div class="filters">
-                <button class="filter active" data-filter="all">
+
+                <button class="active" data-filter="all">
                     Todos
                 </button>
-                <button class="filter" data-filter="web">
+
+                <button data-filter="web">
                     Websites
                 </button>
-                <button class="filter" data-filter="ecommerce">
+
+                <button data-filter="shop">
                     E-commerce
                 </button>
+
+                <button data-filter="dashboard">
+                    Dashboards
+                </button>
+
             </div>
-            <!-- GRID -->
+
+
+            <!-- PROJETOS -->
+
             <div class="project-grid">
-                <!-- PROJETO 1 -->
-                <article class="project-card large" data-category="ecommerce">
-                    <div class="project-image fashion">
-                        <div class="mockup">
-                            <div class="mockup-top">
-                                MONOCHROME
-                                <span>MENU　 CART</span>
-                            </div>
-                            <div class="fashion-title">
-                                LESS<br>
-                                <i>IS</i><br>
-                                MORE.
-                            </div>
+
+
+                <!-- MONOCHROME -->
+
+                <article class="project glass large" data-category="shop">
+
+                    <div class="project-preview monochrome">
+
+                        <div class="mini-nav">
+                            MONOCHROME
+                            <span>SHOP　 MENU</span>
                         </div>
+
+                        <div class="fashion-text">
+                            LESS<br>
+                            <i>IS</i><br>
+                            MORE
+                        </div>
+
+                        <div class="mini-product">
+                            COLLECTION 01
+                        </div>
+
                     </div>
-                    <div class="project-info">
+
+                    <div class="project-details">
+
                         <div>
-                            <span>E-COMMERCE</span>
+                            <small>E-COMMERCE</small>
                             <h3>Monochrome</h3>
                         </div>
-                        <a href="#" class="project-arrow">↗</a>
+
+                        <a href="#" target="_blank">↗</a>
+
                     </div>
+
                 </article>
 
-                <!-- PROJETO 2 -->
-                <article class="project-card" data-category="web">
-                    <div class="project-image vertex">
-                        <div class="vertex-content">
-                            <small>VERTEX</small>
-                            <strong>
-                                LAB<br>
-                                EQUIPMENT
-                            </strong>
-                        </div>
+
+                <!-- VERTEX -->
+
+                <article class="project glass" data-category="web">
+
+                    <div class="project-preview vertex">
+
+                        <div class="vertex-glow"></div>
+
+                        <small>VERTEX / LAB</small>
+
+                        <strong>
+                            SCIENCE<br>
+                            REDEFINED.
+                        </strong>
+
+                        <span>EXPLORE →</span>
+
                     </div>
-                    <div class="project-info">
+
+                    <div class="project-details">
+
                         <div>
-                            <span>WEBSITE</span>
+                            <small>WEBSITE</small>
                             <h3>Vertex Lab</h3>
                         </div>
-                        <a href="#" class="project-arrow">↗</a>
+
+                        <a href="#" target="_blank">↗</a>
+
                     </div>
+
                 </article>
 
-                <!-- PROJETO 3 -->
-                <article class="project-card large" data-category="web">
-                    <div class="project-image architecture">
+
+                <!-- DASHBOARD -->
+
+                <article class="project glass" data-category="dashboard">
+
+                    <div class="project-preview analytics">
+
+                        <div class="dashboard-card">
+
+                            <small>REVENUE</small>
+
+                            <strong>
+                                R$ 84.920
+                            </strong>
+
+                            <div class="chart">
+                                <span></span>
+                            </div>
+
+                            <div class="chart-bars">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-details">
+
                         <div>
-                            <span>ARCH / 2026</span>
-                            <h3>
+                            <small>DASHBOARD</small>
+                            <h3>Analytics</h3>
+                        </div>
+
+                        <a href="#" target="_blank">↗</a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ATELIER -->
+
+                <article class="project glass large" data-category="web">
+
+                    <div class="project-preview atelier">
+
+                        <div class="atelier-overlay">
+
+                            <small>ARCHITECTURE / 2026</small>
+
+                            <strong>
                                 SPACE<br>
                                 BETWEEN
-                            </h3>
-                            <small>
+                            </strong>
+
+                            <span>
                                 Architecture & Interior
-                            </small>
+                            </span>
+
                         </div>
+
                     </div>
-                    <div class="project-info">
+
+                    <div class="project-details">
+
                         <div>
-                            <span>CREATIVE WEBSITE</span>
+                            <small>CREATIVE WEBSITE</small>
                             <h3>Atelier 01</h3>
                         </div>
-                        <a href="#" class="project-arrow">↗</a>
+
+                        <a href="#" target="_blank">↗</a>
+
                     </div>
+
                 </article>
+
             </div>
+
         </section>
+
 
         <!-- SOBRE -->
+
         <section class="about section" id="sobre">
-            <div class="about-number">
+
+            <div class="about-label glass">
                 02
             </div>
+
             <div class="about-content">
-                <span class="eyebrow">
-                    SOBRE MIM
-                </span>
+
+                <span>ABOUT ME</span>
+
                 <h2>
-                    Código com<br>
-                    <em>personalidade.</em>
+                    Design meets<br>
+                    <strong>code.</strong>
                 </h2>
+
                 <p>
-                    Gosto de criar interfaces que não sejam apenas bonitas,
-                    mas que tenham propósito. Cada projeto começa com uma
-                    ideia e termina em uma experiência digital intuitiva.
+                    Eu acredito que um bom site precisa fazer mais do que
+                    funcionar. Ele precisa transmitir uma ideia, criar
+                    uma sensação e proporcionar uma experiência.
                 </p>
+
                 <p>
-                    Meu foco está em Front-End, UI, responsividade,
-                    animações e desenvolvimento de experiências modernas
-                    para web.
+                    Meu trabalho combina desenvolvimento Front-End,
+                    design de interfaces, responsividade e animações
+                    para criar experiências digitais únicas.
                 </p>
+
+
                 <div class="skills">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Responsive Design</span>
-                    <span>UI / UX</span>
+
+                    <div class="skill glass">HTML</div>
+                    <div class="skill glass">CSS</div>
+                    <div class="skill glass">JavaScript</div>
+                    <div class="skill glass">Vue.js</div>
+                    <div class="skill glass">UI / UX</div>
+                    <div class="skill glass">Responsive</div>
+
                 </div>
+
             </div>
+
         </section>
 
+
         <!-- PROCESSO -->
+
         <section class="process section">
-            <span class="eyebrow">
-                03 — PROCESSO
-            </span>
+
+            <span>03 — PROCESS</span>
+
             <h2>
-                Do conceito ao<br>
-                <em>pixel perfeito.</em>
+                Como uma ideia<br>
+                vira <strong>interface.</strong>
             </h2>
+
+
             <div class="process-grid">
-                <div class="process-item">
+
+                <div class="process-card glass">
+
                     <span>01</span>
-                    <h3>Descobrir</h3>
+
+                    <h3>Discover</h3>
+
                     <p>
-                        Entender o projeto, objetivo, público e
-                        necessidades da interface.
+                        Entender o objetivo e encontrar a melhor
+                        direção para o projeto.
                     </p>
+
                 </div>
-                <div class="process-item">
+
+
+                <div class="process-card glass">
+
                     <span>02</span>
-                    <h3>Projetar</h3>
+
+                    <h3>Design</h3>
+
                     <p>
-                        Transformar ideias em uma experiência visual
-                        clara, moderna e funcional.
+                        Criar uma identidade visual e uma experiência
+                        intuitiva.
                     </p>
+
                 </div>
-                <div class="process-item">
+
+
+                <div class="process-card glass">
+
                     <span>03</span>
-                    <h3>Desenvolver</h3>
+
+                    <h3>Develop</h3>
+
                     <p>
-                        Construir uma interface responsiva,
-                        performática e fiel ao conceito.
+                        Transformar o conceito em código limpo,
+                        responsivo e performático.
                     </p>
+
                 </div>
-                <div class="process-item">
+
+
+                <div class="process-card glass">
+
                     <span>04</span>
-                    <h3>Entregar</h3>
+
+                    <h3>Launch</h3>
+
                     <p>
-                        Testar, otimizar e entregar uma experiência
-                        pronta para diferentes dispositivos.
+                        Testar, otimizar e colocar o projeto no ar.
                     </p>
+
                 </div>
+
             </div>
+
         </section>
-		
+
+
         <!-- CONTATO -->
+
         <section class="contact section" id="contato">
-            <div class="contact-inner">
-                <span class="eyebrow">
-                    04 — CONTATO
-                </span>
+
+            <div class="contact-box glass">
+
+                <span>04 — CONTATO</span>
+
                 <h2>
-                    Tem uma ideia?<br>
-                    <em>Vamos criar.</em>
+                    Let's make<br>
+                    something <strong>great.</strong>
                 </h2>
-                <a href="mailto:seuemail@email.com" class="email">
-                    seuemail@email.com
-                    <span>↗</span>
+
+                <a href="mailto:seuemail@email.com" class="contact-email">
+                    seuemail@email.com ↗
                 </a>
+
                 <div class="socials">
+
                     <a href="#">GitHub</a>
                     <a href="#">LinkedIn</a>
                     <a href="#">Instagram</a>
+
                 </div>
+
             </div>
+
         </section>
+
     </main>
 
+
     <!-- FOOTER -->
+
     <footer>
-        <div>
-            © 2026 THIAGO
-        </div>
-        <div>
-            DESIGNED & CODED WITH ☕
-        </div>
-        <a href="#home">
-            BACK TO TOP ↑
-        </a>
+
+        <span>© 2026 THIAGO</span>
+
+        <span>FRONT-END DEVELOPER</span>
+
+        <a href="#home">BACK TO TOP ↑</a>
+
     </footer>
+
+
     <script src="script.js"></script>
+
 </body>
 </html>
