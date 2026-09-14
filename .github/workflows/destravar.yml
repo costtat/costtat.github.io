@@ -1,7 +1,6 @@
 name: Forçar Cancelamento
 on: workflow_dispatch # Permite rodar manualmente com o botão
 
-# ISSO AQUI VAI DAR O PODER NECESSÁRIO PARA QUEBRAR O BLOQUEIO 403:
 permissions:
   actions: write
 
@@ -9,8 +8,8 @@ jobs:
   cancelar:
     runs-on: ubuntu-latest
     steps:
-      - name: Cancelar Workflow Travado
+      - name: Deletar Registro do Workflow Travado
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh api -X POST /repos/costtat/costtat.github.io/actions/runs/34838453419/force-cancel
+          gh api -X DELETE /repos/costtat/costtat.github.io/actions/runs/34838453419
