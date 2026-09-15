@@ -331,7 +331,10 @@ button {
 .primary span {
     margin-left: 25px;
 }
-
+.video-demonstracao{
+    border-radius: 25px;
+    box-shadow: 0 4px 20px 7px rgb(195 195 195 / 15%);
+}
 
 /* =================================
    CODE CARD
